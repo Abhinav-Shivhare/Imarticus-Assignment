@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  
+  <div class="sidenav">
+    <img src="https://cdn.pegasus.imarticus.org/images/imarticus-new-logo.svg" alt="">
+    <a class = "text" href="#about">Course</a>
+    <a class = "text" href="#services">Discussion</a>
+  </div>
+  <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div  id = "space" class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link " href="#">Introduction to Machine Learning <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+        
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="img1 small" src="https://cdn.eckovation.com/images/Profile-01.svg" alt=""> 
+          Name
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="#">My Applications</a>
+            <a class="dropdown-item" href="#">My Transactions</a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </li>
+  
+    </div>
+  </nav>
+  <div id ="floatingMenu" class="line">
+<h3>All Courses </h3>
+ <i class="fa fa-chevron-right"></i>
+  <h3> Introduction to Machine Learning</h3>
+ 
+  
+  <div class="paragraphs">
+<img class="samll" src="https://cdn.eckovation.com/images/Introduction-to-Machine-Learning.png" alt="">
+<h3 style="float:right;">Introduction to Machine Learning</h1>
+
+  </div>
+  <div>
+    <%lists.forEach(function(element){ %>
+      <h3><%=element.topic%></h3>
+      <h3><%=element.lecture%></h3>
+      <%})%>
+  </div>
+
+
+  </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+  </body>
+  </html> 
+  
